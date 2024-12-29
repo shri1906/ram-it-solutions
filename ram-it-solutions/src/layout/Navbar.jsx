@@ -1,24 +1,43 @@
-import { Navbar, Nav,Image } from 'react-bootstrap';
-
-const MyNavbar = () => {
+const Navbar = () => {
   return (
-    <Navbar bg="light" expand="lg" className="shadow px-4">
-      
-        <Navbar.Brand href="/">
-        <Image src='/logo.png' height={'70px'} />
-        Ram IT Solutions</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/services">Services</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      
-    </Navbar>
+    <>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary shadow">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            <img src="/logo.png" alt="" width={"60px"} className="me-4" />
+            Ram IT Solutions
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-link active" aria-current="page" href="#">
+                Home
+              </a>
+              <a className="nav-link" href="#">
+                Features
+              </a>
+              <a className="nav-link" href="#">
+                Pricing
+              </a>
+              <a className="nav-link"  href="#">
+                Disabled
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 };
 
-export default MyNavbar;
+export default Navbar;

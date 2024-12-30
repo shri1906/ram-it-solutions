@@ -48,8 +48,8 @@ const Home = () => {
         </button>
       </div>
       <div className="container mt-4">
-        <div className="mb-4 mx-4">
-          <p className="fs-6 text-uppercase text-center">
+        <div className="mb-4 custom-div">
+          <p className="small-header text-uppercase text-center">
             <b>what we do</b>
           </p>
           <p className="fs-3 text-center">
@@ -65,60 +65,115 @@ const Home = () => {
             services, including software development, IT consulting, cloud
             computing and cybersecurity. By leveraging the latest technologies
             and industry best practices, we create customized solutions that
-            address unique business challenges and unlock growth opportunities.{" "}
-            <br />
-            <b>Our Mission:</b> To empower businesses by providing cutting-edge
-            technology solutions that enhance efficiency, drive innovation, and
-            deliver measurable results. <br /> <b>Our Vision:</b> To be a global
-            leader in IT services, recognized for our commitment to excellence,
-            innovation, and sustainability. With a strong focus on quality,
-            integrity, and collaboration, Ram IT Solutions is dedicated to
-            helping you achieve your business goals and staying ahead in the
-            digital age.
+            address unique business challenges and unlock growth opportunities.
           </p>
         </div>
       </div>
       <div className="container my-5">
         <div className="row g-4">
-          <div className="col-md-3 col-sm-6">
+          <div className="col-6 col-md-2">
+            <div className="card text-center shadow ">
+              <div className="card-body">
+                <i className="fa-solid fa-network-wired fa-3x mb-3 text-secondary"></i>
+                <h5 className="card-title fs-6">Networking</h5>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-md-2">
             <div className="card text-center shadow ">
               <div className="card-body">
                 <i className="fa-solid fa-code fa-3x mb-3 text-primary"></i>
-                <h5 className="card-title">Web Development</h5>
+                <h5 className="card-title fs-6">Web Development</h5>
               </div>
             </div>
           </div>
 
-          <div className="col-md-3 col-sm-6">
-            <div className="card text-center shadow ">
-              <div className="card-body">
-                <i className="fa-solid fa-user-tie fa-3x mb-3 text-success"></i>
-                <h5 className="card-title">IT Consulting</h5>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-3 col-sm-6">
-            <div className="card text-center shadow ">
-              <div className="card-body">
-                <i className="fa-solid fa-cloud fa-3x mb-3 text-secondary"></i>
-                <h5 className="card-title">Cloud Computing</h5>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-3 col-sm-6">
+          <div className="col-6 col-md-2">
             <div className="card text-center shadow ">
               <div className="card-body">
                 <i className="fa-solid fa-shield-halved fa-3x mb-3 text-danger"></i>
-                <h5 className="card-title">Cybersecurity</h5>
+                <h5 className="card-title fs-6">Cyber Security</h5>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-6 col-md-2">
+            <div className="card text-center shadow ">
+              <div className="card-body">
+                <i className="fa-solid fa-headset fa-3x mb-3 text-success"></i>
+                <h5 className="card-title fs-6">IT Consulting</h5>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-6 col-md-2">
+            <div className="card text-center shadow ">
+              <div className="card-body">
+                <i className="fa-solid fa-database fa-3x mb-3 text-primary"></i>
+                <h5 className="card-title fs-6">Datacenter Solutions</h5>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-6 col-md-2">
+            <div className="card text-center shadow ">
+              <div className="card-body">
+                <i className="fa-solid fa-chalkboard-user fa-3x mb-3 text-success"></i>
+                <h5 className="card-title fs-6">Professional Services</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div>
-        
+      <div className="container my-5">
+        <div className="row g-4">
+          <div className="col-6 col-md-6">
+            <div className="card text-center shadow ">
+              <div className="card-body">
+                <h5 className="card-title">Our Mission</h5>
+                <p className="card-text">
+                  To empower businesses by providing cutting-edge technology
+                  solutions that enhance efficiency, drive innovation, and
+                  deliver measurable results.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-md-6">
+            <div className="card text-center shadow ">
+              <div className="card-body">
+                <h5 className="card-title">Our Vision</h5>
+                <p className="card-text">
+                  To be a global leader in IT services, recognized for our
+                  commitment to excellence, innovation, and sustainability. With
+                  a strong focus on quality, integrity, and collaboration, Ram
+                  IT Solutions is dedicated to helping you achieve your business
+                  goals and staying ahead in the digital age.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="info-div text-white d-flex align-items-center justify-content-center py-5">
+        <div className="text-center w-100 w-md-50 mx-2">
+          <p className="fs-5">Let’s get started</p>
+          <h1 className="fs-1 fs-md-1">
+            Are you ready for a better, more productive business?
+          </h1>
+          <p className="fs-5 font-weight-bold mb-4">
+            Stop worrying about technology problems. Focus on your business. Let
+            us provide the support you deserve.
+          </p>
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-btn mb-4"
+          >
+            Contact Us Now
+          </a>
+        </div>
       </div>
     </>
   );

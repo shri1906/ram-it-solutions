@@ -11,9 +11,8 @@ const Footer = () => {
             <p>
               
               Ram IT Solutions<br />
-              123, Example Street<br />
-              Dehradun - 248001<br />
-              India
+              120, Karanpur, Near Survey Chowk<br />
+              Dehradun - 248001, India
             </p>
           </div>
 

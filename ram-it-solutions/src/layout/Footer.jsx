@@ -6,9 +6,10 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           {/* Address Section */}
-          <div className="col-md-4 mb-3">
+          <div className="col-md-6 mb-3">
             <h5>Address</h5>
             <p>
+              
               Ram IT Solutions<br />
               123, Example Street<br />
               Dehradun - 248001<br />
@@ -16,27 +17,8 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links Section */}
-          <div className="col-md-4 mb-3">
-            <h5>Quick Links</h5>
-            <ul className="list-unstyled">
-              <li>
-                <a href="#" className="text-white text-decoration-none">Home</a>
-              </li>
-              <li>
-                <a href="#" className="text-white text-decoration-none">About Us</a>
-              </li>
-              <li>
-                <a href="#" className="text-white text-decoration-none">Services</a>
-              </li>
-              <li>
-                <a href="#" className="text-white text-decoration-none">Contact</a>
-              </li>
-            </ul>
-          </div>
-
           {/* Social Media Section */}
-          <div className="col-md-4 mb-3">
+          <div className="col-md-6 mb-3">
             <h5>Follow Us</h5>
             <div>
               <a href="#" className="text-white me-3">

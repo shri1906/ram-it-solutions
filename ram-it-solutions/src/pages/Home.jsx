@@ -72,7 +72,7 @@ const Home = () => {
       <div className="container my-5">
         <div className="row g-4">
           <div className="col-6 col-md-2">
-            <div className="card text-center shadow ">
+            <div className="card text-center shadow custom-card">
               <div className="card-body">
                 <i className="fa-solid fa-network-wired fa-3x mb-3 text-secondary"></i>
                 <h5 className="card-title fs-6">Networking</h5>
@@ -80,7 +80,7 @@ const Home = () => {
             </div>
           </div>
           <div className="col-6 col-md-2">
-            <div className="card text-center shadow ">
+            <div className="card text-center shadow custom-card">
               <div className="card-body">
                 <i className="fa-solid fa-code fa-3x mb-3 text-primary"></i>
                 <h5 className="card-title fs-6">Web Development</h5>
@@ -89,7 +89,7 @@ const Home = () => {
           </div>
 
           <div className="col-6 col-md-2">
-            <div className="card text-center shadow ">
+            <div className="card text-center shadow custom-card">
               <div className="card-body">
                 <i className="fa-solid fa-shield-halved fa-3x mb-3 text-danger"></i>
                 <h5 className="card-title fs-6">Cyber Security</h5>
@@ -98,7 +98,7 @@ const Home = () => {
           </div>
 
           <div className="col-6 col-md-2">
-            <div className="card text-center shadow ">
+            <div className="card text-center shadow custom-card">
               <div className="card-body">
                 <i className="fa-solid fa-headset fa-3x mb-3 text-success"></i>
                 <h5 className="card-title fs-6">IT Consulting</h5>
@@ -107,7 +107,7 @@ const Home = () => {
           </div>
 
           <div className="col-6 col-md-2">
-            <div className="card text-center shadow ">
+            <div className="card text-center shadow custom-card">
               <div className="card-body">
                 <i className="fa-solid fa-database fa-3x mb-3 text-primary"></i>
                 <h5 className="card-title fs-6">Datacenter Solutions</h5>
@@ -116,7 +116,7 @@ const Home = () => {
           </div>
 
           <div className="col-6 col-md-2">
-            <div className="card text-center shadow ">
+            <div className="card text-center shadow custom-card">
               <div className="card-body">
                 <i className="fa-solid fa-chalkboard-user fa-3x mb-3 text-success"></i>
                 <h5 className="card-title fs-6">Professional Services</h5>
@@ -127,23 +127,28 @@ const Home = () => {
       </div>
       <div className="container my-5">
         <div className="row g-4">
-          <div className="col-6 col-md-6">
+          <div className="col-12 col-md-6">
             <div className="card text-center shadow ">
               <div className="card-body">
                 <h5 className="card-title">Our Mission</h5>
-                <p className="card-text">
-                  To empower businesses by providing cutting-edge technology
-                  solutions that enhance efficiency, drive innovation, and
-                  deliver measurable results.
+                <p className="card-text px-3" style={{textAlign:'justify'}}>
+                  To empower businesses by delivering cutting-edge, reliable,
+                  and scalable IT solutions. We are committed to providing
+                  innovative technology services that enhance productivity,
+                  streamline processes, and drive digital transformation.
+                  Through expert consultation, custom software development, and
+                  robust IT infrastructure, we help our clients achieve
+                  sustainable growth, overcome technology challenges, and stay
+                  ahead in the competitive digital landscape.
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-6 col-md-6">
+          <div className="col-12 col-md-6">
             <div className="card text-center shadow ">
               <div className="card-body">
                 <h5 className="card-title">Our Vision</h5>
-                <p className="card-text">
+                <p className="card-text px-3" style={{textAlign:'justify'}}>
                   To be a global leader in IT services, recognized for our
                   commitment to excellence, innovation, and sustainability. With
                   a strong focus on quality, integrity, and collaboration, Ram

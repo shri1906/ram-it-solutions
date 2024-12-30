@@ -1,5 +1,5 @@
 import "../styles/home.css";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -84,9 +84,7 @@ const Home = () => {
             <div className="card text-center shadow custom-card h-100">
               <div className="card-body">
                 <i className="fa-solid fa-code fa-3x mb-3 text-primary"></i>
-                <h5 className="card-title fs-6">
-                  Web Development
-                </h5>
+                <h5 className="card-title fs-6">Web Development</h5>
               </div>
             </div>
           </div>
@@ -113,9 +111,7 @@ const Home = () => {
             <div className="card text-center shadow custom-card h-100">
               <div className="card-body">
                 <i className="fa-solid fa-database fa-3x mb-3 text-primary"></i>
-                <h5 className="card-title fs-6">
-                  Datacenter Solutions
-                </h5>
+                <h5 className="card-title fs-6">Datacenter Solutions</h5>
               </div>
             </div>
           </div>
@@ -124,9 +120,7 @@ const Home = () => {
             <div className="card text-center shadow custom-card h-100">
               <div className="card-body">
                 <i className="fa-solid fa-chalkboard-user fa-3x mb-3 text-success"></i>
-                <h5 className="card-title fs-6">
-                  Professional Services
-                </h5>
+                <h5 className="card-title fs-6">Professional Services</h5>
               </div>
             </div>
           </div>
@@ -184,12 +178,12 @@ const Home = () => {
             us provide the support you deserve.
           </p>
           <Link
-            to={''}
+            to={"/contact-us"}
             target="_blank"
             rel="noopener noreferrer"
             className="contact-btn mb-4"
           >
-            Contact Us Now
+            <span>Contact Us Now</span>
           </Link>
         </div>
       </div>
@@ -201,7 +195,7 @@ const Home = () => {
           <p className="fs-3 text-center">
             <b>Why Should Our IT Solutions</b>
           </p>
-          <p style={{ textAlign: "justify" }}>
+          <p className="pb-4" style={{ textAlign: "justify" }}>
             At our core, we are dedicated to delivering tailored IT solutions
             that empower businesses to thrive in the digital age. With a team of
             experienced professionals, we bring expertise in modern
@@ -243,7 +237,7 @@ const Home = () => {
                   Built on a foundation of strategic partnerships, expert
                   collaborations, and a dedicated team, our network enables us
                   to deliver innovative and comprehensive solutions to our
-                  clients. 
+                  clients.
                 </p>
               </div>
             </div>

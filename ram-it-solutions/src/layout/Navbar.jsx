@@ -1,11 +1,13 @@
+import { Link, NavLink } from 'react-router-dom'
+
 const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary shadow">
         <div className="container-fluid">
-          <a className="navbar-brand mx-2" href="#">
+          <Link className="navbar-brand mx-2" to="/">
             <img src="/logo.png" alt="" height={'60px'} className="me-2" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -19,18 +21,18 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse mx-4" id="navbarNavAltMarkup">
             <div className="navbar-nav  ms-auto">
-              <a className="nav-link"  href="#">
+              <NavLink className="nav-link"  to="/">
                 <b>Home</b>
-              </a>
-              <a className="nav-link" href="#">
+              </NavLink>
+              <NavLink className="nav-link" to="/what-we-do">
                 <b>What we do</b>
-              </a>
-              <a className="nav-link" href="#">
+              </NavLink>
+              <NavLink className="nav-link" to="/who-we-are">
                 <b>Who we are</b>
-              </a>
-              <a className="nav-link"  href="#">
+              </NavLink>
+              <NavLink className="nav-link"  to="/contact-us">
                 <b>Contact us</b>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

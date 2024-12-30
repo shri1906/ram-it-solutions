@@ -1,4 +1,5 @@
 import "../styles/home.css";
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -182,14 +183,14 @@ const Home = () => {
             Stop worrying about technology problems. Focus on your business. Let
             us provide the support you deserve.
           </p>
-          <a
-            href=""
+          <Link
+            to={''}
             target="_blank"
             rel="noopener noreferrer"
             className="contact-btn mb-4"
           >
             Contact Us Now
-          </a>
+          </Link>
         </div>
       </div>
       <div className="container my-5">

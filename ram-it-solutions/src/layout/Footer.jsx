@@ -1,16 +1,16 @@
 
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-dark text-white pt-4">
+    <footer className="border pt-4">
       <div className="container">
         <div className="row">
           {/* Address Section */}
           <div className="col-md-6 mb-3">
-            <h5>Address</h5>
+            <img src="./logo.png" alt="logo" height={'50px'} />
             <p>
-              
-              Ram IT Solutions<br />
+            <i className="fa-solid fa-location-dot me-2"></i>
               120, Karanpur, Near Survey Chowk<br />
               Dehradun - 248001, India
             </p>
@@ -20,24 +20,24 @@ const Footer = () => {
           <div className="col-md-6 mb-3">
             <h5>Follow Us</h5>
             <div>
-              <a href="#" className="text-white me-3">
-                <i className="fab fa-facebook-f"></i>
+              <a href="#" className=" me-3">
+                <i className="fab fa-facebook-f fa-xl"></i>
               </a>
-              <a href="#" className="text-white me-3">
-                <i className="fab fa-twitter"></i>
+              <a href="#" className=" me-3">
+                <i className="fab fa-twitter fa-xl"></i>
               </a>
-              <a href="#" className="text-white me-3">
-                <i className="fab fa-instagram"></i>
+              <a href="#" className=" me-3">
+                <i className="fab fa-instagram fa-xl"></i>
               </a>
-              <a href="#" className="text-white">
-                <i className="fab fa-linkedin-in"></i>
+              <a href="#" className="">
+                <i className="fab fa-linkedin-in fa-xl"></i>
               </a>
             </div>
           </div>
         </div>
         <hr className="border-secondary" />
-        <div className="text-center py-2">
-          &copy; 2024 Ram IT Solutions | All rights reserved.
+        <div className="text-center pb-2" style={{fontSize:'14px'}}>
+          &copy; {currentYear} Ram IT Solutions | All rights reserved.
         </div>
       </div>
     </footer>

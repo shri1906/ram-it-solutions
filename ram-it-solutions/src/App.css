@@ -1,4 +1,96 @@
 .active{
     color: orangered !important;
 }
+.carousel-inner img {
+    height: 550px;
+    object-fit: cover;
+    background-color: #000;
+  }
+  
+  .home-img {
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+  }
+  .info-div {
+    height: 500px;
+    background-image: url("/server.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px 0 30px;
+    background-color: rgba(43, 42, 42, 1);
+    background-blend-mode: overlay;
+  }
+  .custom-card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  .custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  .custom-div {
+    margin: 0 100px;
+    padding: 0 60px;
+  }
+  /* Base Button Styling */
+  .contact-btn {
+    position: relative;
+    background-color: teal;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    overflow: hidden;
+    transition: color 0.5 ease;
+    z-index: 1;
+  }
+  
+  /* Add the green hover effect */
+  .contact-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: orangered;
+    transition: width 0.5s ease;
+    z-index: 0;
+  }
+  
+  .contact-btn:hover::before {
+    width: 100%;
+  }
+  
+  .contact-btn span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .small-header {
+    font-size: 14px;
+    margin: 0;
+    color: orangered;
+  }
+  .custom-card-title {
+    font-size: 12px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .carousel-inner img {
+      height: 300px;
+    }
+    .custom-div {
+      margin: 0;
+      padding: 0;
+    }
+    .info-div {
+      height: auto;
+    }
+  }  
 

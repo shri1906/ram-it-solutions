@@ -1,5 +1,3 @@
-import '../styles/home.css'
-
 const Features = () => {
   return (
     <>
@@ -50,7 +48,7 @@ const Features = () => {
                 <img
                   src="/coding.jpg"
                   alt="coding"
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   style={{ maxHeight: "300px", objectFit: "contain" }}
                 />
               </div>
@@ -65,7 +63,7 @@ const Features = () => {
                 <img
                   src="/network.png"
                   alt="network"
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   style={{ maxHeight: "300px", objectFit: "contain" }}
                 />
               </div>
@@ -117,7 +115,7 @@ const Features = () => {
                 <img
                   src="/it-consult.jpg"
                   alt="it-consult"
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   style={{ maxHeight: "300px", objectFit: "contain" }}
                 />
               </div>
@@ -132,7 +130,7 @@ const Features = () => {
                 <img
                   src="/security.jpg"
                   alt="security"
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   style={{ maxHeight: "300px", objectFit: "contain" }}
                 />
               </div>
@@ -183,7 +181,7 @@ const Features = () => {
                 <img
                   src="/professional.jpg"
                   alt="professional"
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   style={{ maxHeight: "300px", objectFit: "contain" }}
                 />
               </div>
@@ -198,7 +196,7 @@ const Features = () => {
                 <img
                   src="/data-center.jpg"
                   alt="datacenter"
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   style={{ maxHeight: "300px", objectFit: "contain" }}
                 />
               </div>

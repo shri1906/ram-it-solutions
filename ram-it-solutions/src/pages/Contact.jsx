@@ -45,11 +45,12 @@ const ContactUs = () => {
 
   return (
     <div className="container my-5">
-      <div className="row">
+      <div className="row mb-4">
         {/* Contact Information Section */}
         <div className="col-md-6 mb-4">
           <h2>Contact Us</h2>
           <p>If you have any questions, feel free to reach out to us:</p>
+          <img src="./logo.png" alt="logo" height={'150px'} />
           <ul className="list-unstyled">
             <li>
               <i className="fa-solid fa-envelope me-2"></i>

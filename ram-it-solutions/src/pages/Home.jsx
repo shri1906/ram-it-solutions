@@ -59,7 +59,7 @@ const Home = () => {
               digital transformation for businesses
             </b>
           </p>
-          <p style={{ textAlign: "justify" }}>
+          <p className="lead" style={{ textAlign: "justify" }}>
             We specialize in delivering innovative, efficient, and scalable
             technology services that empower our clients to thrive in today’s
             competitive digital landscape. Our expertise spans a wide range of
@@ -119,7 +119,7 @@ const Home = () => {
           <div className="col-6 col-md-2">
             <div className="card text-center shadow custom-card h-100">
               <div className="card-body">
-                <i className="fa-solid fa-chalkboard-user fa-3x mb-3 text-success"></i>
+                <i className="fa-solid fa-briefcase fa-3x mb-3 text-success"></i>
                 <h5 className="card-title fs-6">Professional Services</h5>
               </div>
             </div>
@@ -179,7 +179,6 @@ const Home = () => {
           </p>
           <Link
             to={"/contact-us"}
-            target="_blank"
             rel="noopener noreferrer"
             className="contact-btn mb-4"
           >
@@ -195,7 +194,7 @@ const Home = () => {
           <p className="fs-3 text-center">
             <b>Why Should Our IT Solutions</b>
           </p>
-          <p className="pb-4" style={{ textAlign: "justify" }}>
+          <p className="pb-4 lead" style={{ textAlign: "justify" }}>
             At our core, we are dedicated to delivering tailored IT solutions
             that empower businesses to thrive in the digital age. With a team of
             experienced professionals, we bring expertise in modern

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -20,18 +21,18 @@ const Footer = () => {
           <div className="col-md-6 mb-3">
             <h5>Follow Us</h5>
             <div>
-              <a href="#" className=" me-3">
-                <i className="fab fa-facebook-f fa-xl"></i>
-              </a>
-              <a href="#" className=" me-3">
-                <i className="fab fa-twitter fa-xl"></i>
-              </a>
-              <a href="#" className=" me-3">
-                <i className="fab fa-instagram fa-xl"></i>
-              </a>
-              <a href="#" className="">
-                <i className="fab fa-linkedin-in fa-xl"></i>
-              </a>
+              <Link to="#" className=" me-3">
+                <i className="fab fa-facebook-f fa-xl text-dark"></i>
+              </Link>
+              <Link to="#" className=" me-3">
+                <i className="fab fa-twitter fa-xl text-dark"></i>
+              </Link>
+              <Link to="#" className=" me-3">
+                <i className="fab fa-instagram fa-xl text-dark"></i>
+              </Link>
+              <Link to="#" className="">
+                <i className="fab fa-linkedin-in fa-xl text-dark"></i>
+              </Link>
             </div>
           </div>
         </div>

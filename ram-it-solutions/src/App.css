@@ -80,6 +80,9 @@
   .custom-card-title {
     font-size: 12px;
   }
+  .contact_row{
+    margin: 150px 0px !important;
+  }
   
   @media only screen and (max-width: 480px) {
     .carousel-inner img {
@@ -91,6 +94,9 @@
     }
     .info-div {
       height: auto;
+    }
+    .contact_row{
+      margin: 10px 0px !important;
     }
   }  
 

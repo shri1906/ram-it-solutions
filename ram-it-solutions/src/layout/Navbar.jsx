@@ -20,7 +20,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse mx-4" id="navbarNavAltMarkup">
-            <div className="navbar-nav  ms-auto">
+            <div className="navbar-nav gap-4 ms-auto">
               <NavLink className="nav-link"  to="/">
                 <b>Home</b>
               </NavLink>

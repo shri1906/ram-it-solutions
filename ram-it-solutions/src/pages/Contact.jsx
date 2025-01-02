@@ -5,10 +5,12 @@ import emailjs from "@emailjs/browser";
 const ContactUs = () => {
   const form = useRef();
   const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false);
+
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm( 
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -19,10 +21,13 @@ const ContactUs = () => {
       .then(
         () => {
           setStatus("Email Sent Successfully!");
+          setLoading(false); 
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
           setStatus("Error in sending Email!");
+          setLoading(false);
         }
       );
   };
@@ -42,14 +47,14 @@ const ContactUs = () => {
                 <strong>Email:</strong>{" "}
                 <Link
                   className="text-decoration-none"
-                  to="mailto:shivammaurya7310@gmail.com"
+                  to="mailto:ramitsolution1@gmail.com"
                 >
-                  shivammaurya7310@gmail.com
+                  ramitsolution1@gmail.com
                 </Link>
               </li>
               <li>
                 <i className="fa-solid fa-mobile-retro me-2"></i>
-                <strong>Phone:</strong> +91-7310941087
+                <strong>Phone:</strong> +91-8445516673
               </li>
               <li>
                 <i className="fa-solid fa-location-dot me-2"></i>
@@ -86,8 +91,12 @@ const ContactUs = () => {
                 <label className="form-label">Message</label>
                 <textarea className="form-control" name="message" required />
               </div>
-              <button type="submit" className="btn btn-primary">
-                Send Message
+              <button type="submit" className="btn btn-primary" disabled={loading}>
+                {loading ? (
+                  <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                ) : (
+                  "Send Message"
+                )}
               </button>
             </form>
 

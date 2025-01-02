@@ -1,44 +1,30 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-// import emailjs from 'emailjs';
+import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  // const [status, setStatus] = useState('');
-
-  // Handle form input changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
+  const form = useRef();
+  const [status, setStatus] = useState("");
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // emailjs
-    //   .sendForm(
-    //     'your_service_id',    // Replace with your EmailJS service ID
-    //     'your_template_id',    // Replace with your EmailJS template ID
-    //     e.target,              // This is the form element
-    //     'your_user_id'         // Replace with your EmailJS user ID
-    //   )
-    //   .then(
-    //     (result) => {
-    //       setStatus('Message sent successfully!');
-    //       setFormData({ name: '', email: '', message: '' }); // Clear the form
-    //     },
-    //     (error) => {
-    //       setStatus('Error sending message, please try again later.');
-    //     }
-    //   );
+    emailjs
+      .sendForm( 
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      )
+      .then(
+        () => {
+          setStatus("Email Sent Successfully!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          setStatus("Error in sending Email!");
+        }
+      );
   };
 
   return (
@@ -77,15 +63,13 @@ const ContactUs = () => {
           {/* Contact Form Section */}
           <div className="col-md-6 px-2">
             <h3>Send Us a Message:</h3>
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label className="form-label">Name</label>
                 <input
                   type="text"
                   className="form-control"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
+                  name="user_name"
                   required
                 />
               </div>
@@ -94,21 +78,13 @@ const ContactUs = () => {
                 <input
                   type="email"
                   className="form-control"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  name="user_email"
                   required
                 />
               </div>
               <div className="mb-3">
                 <label className="form-label">Message</label>
-                <textarea
-                  className="form-control"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                />
+                <textarea className="form-control" name="message" required />
               </div>
               <button type="submit" className="btn btn-primary">
                 Send Message
